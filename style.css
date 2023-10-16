@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container{
+    width: 100%;
+    height: 60vh;
+    background-image: url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-position: center;
+    background-size: cover;
+    color: whitesmoke;
+}
+
+.overlay{
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.454);
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-container h1{
+    font-size: 10vh;
+    font-weight: 400;
+    letter-spacing: 2px;
+    /* color: teal; */
+}
+
+.img-container p{
+    font-size: 3vh;
+    margin-bottom: 3vh;
+}
+
+.input-text{
+    width: 45vw;
+    height: 7vh;
+    border: 2px solid#f3f3f3;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 12px 30px;
+    padding-left: 50px;
+    outline: none;
+    box-shadow: 0 20px 45px rgba(234, 157, 223, 0.2)
+}
+.input-button{
+    width: 8vw;
+    height: 7vh;
+    border: none;
+    color: white;
+    font-weight: 600;
+    margin-left: -5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: teal;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 20px 45px rgba(234, 157, 223, 0.2)
+}
+
+.input-button:hover{
+    background-color: rgba(2, 78, 78, 0.656);
+}
+
+.card-container{
+    padding: 16px 0;
+    
+}
+
+.card{
+    width: 30%;
+    height: 100%;
+    margin-bottom: 60px;
+    /* margin: 10px 10px; */
+    /* background-color: blue; */
+    overflow: hidden;
+    /* position: relative; */
+    cursor: pointer;
+    transition:all .2s ease;
+}
+
+.card:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    overflow: hidden;
+    /* bottom: 0px; */
+}
+
+/* .card .name-container:hover{
+    bottom: 0px;
+} */
+
+ .img-content img{
+    /* background-image: url("https://via.placeholder.com/400x200"); */
+    /* width: 400px;
+    height: 200px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+} 
+/* 
+.name-container{
+    position: absolute;
+    bottom: 0;
+    margin: 5px;
+    transform: translate(0,-50%);
+    justify-content: center;
+}
+
+.profile{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 0 5px;
+} */
+
+/* .download-div{
+    position: relative;
+    position: absolute;
+    bottom: 1vh;
+    right: 1vh;
+    height: 40px;
+    width: 40px;
+    border-radius: 6px;
+    background-color: #7251516d;
+    justify-content: center;
+}
+
+.download{
+    
+    transform: translate(0,-50%);
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 800;
+} */
+/* .randomimage{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: skyblue;
+} */
+/* .randomimage i{
+    font-size: 40px;
+    font-weight: 100;
+}
+.randomimage .innerimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    display: none;
+} */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery .images{
+    gap: 15px;
+    max-width: 95%;
+    margin-top: 40px;
+    columns: 5 340px;
+    list-style: none;
+}
+
+.load-more .load{
+    width: 10vw;
+    height: 8vh;
+    border: none;
+    color: white;
+    font-size: 3vh;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: teal;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 20px 45px rgba(234, 157, 223, 0.2);
+    bottom: 20px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.load:hover{
+    background-color: rgb(2, 78, 78);
+}
